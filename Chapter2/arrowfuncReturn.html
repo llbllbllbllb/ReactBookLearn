@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lordify = (name, land) => {
+            if(!name) {
+                throw new Error("name is required")
+            }
+
+            if(!land){
+                throw new Error("land is required")
+            }
+
+            return `${name} of ${land}`
+        }
+        console.log(lordify('ivan','canada'))
+        console.log(lordify('ivan'))
+        
+    </script>
+</body>
+</html>
